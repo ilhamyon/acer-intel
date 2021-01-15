@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+.animate {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(1.550, 0.055, 0.675, 0.190);
+}
+
+.animated {
+	animation-duration: .5s;
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(1.550, 0.055, 0.675, 0.190);
+}
+
+.animate-reverse {
+	animation-direction: reverse;
+}
+
+@keyframes zoom {
+	from {
+		transform: scale3d(1, 1, 1);
+	}
+
+	to {
+		transform: scale3d(1.3, 1.3, 1.3);
+	}
+}
+
+.zoom {
+	animation-name: zoom;
+}
+
+@keyframes zoom-r {
+	from {
+		transform: scale3d(1.3, 1.3, 1.3);
+	}
+
+	to {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+.zoom-r {
+	animation-name: zoom-r;
+}
+
+.zoom-reverse {
+	animation-name: zoom;
+	
+	animation-direction: reverse;
+}
